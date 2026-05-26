@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <title>누피 에어75 V2 리뷰 | 맥북과 데스크를 완성하는 프리미엄 로우 프로파일 키보드</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <link rel="canonical" href="https://tech-project.ranklamp.com/nuphy-air75v2-review" />
+    <meta name="description" content="누피 에어75 V2(NuPhy Air75 V2) 프리미엄 기계식 로우 프로파일 키보드 심층 분석. QMK/VIA 커스텀, 1000Hz 무선 폴링레이트, 맥북 호환성 가이드." />
+    <meta name="keywords" content="누피 에어75 V2, NuPhy Air75 V2, 로우프로파일 키보드, 슬림 기계식 키보드, 맥북 키보드 추천, 프리미엄 데스크테리어, 누피 에어 리뷰" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_GA4_ID');
+    </script>
+
+    <style>
+        /* --- TECH-PROJECT 프리미엄 테크 매거진 공통 비주얼 시스템 --- */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        body { margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; background-color: #0f111a; color: #cbd5e1; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 0.5px; }
+        p { line-height: 1.95; opacity: 0.85; font-weight: 300; }
+        
+        /* --- Hero Section (누피 고유의 파스텔&사이버 무드 조화) --- */
+        .hero { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; overflow: hidden; }
+        .hero-bg { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(15,17,26,0.55), rgba(15,17,26,0.7)), url('images/nuphy_hero_bg.jpg') no-repeat center/cover;
+            background-attachment: fixed; z-index: -1; transform: scale(1.1); transition: transform 0.6s ease;
+        }
+        .hero:hover .hero-bg { transform: scale(1); }
+        .hero-content { opacity: 0; transform: translateY(30px); animation: fadeInUp 1.2s ease forwards 0.4s; }
+        .hero h1 { font-size: 3.4rem; margin: 0 0 25px; text-shadow: 0 0 35px rgba(255,107,107,0.25); color: #ffffff; text-transform: uppercase; line-height: 1.2; }
+        .hero p { font-size: 1.35rem; font-weight: 500; opacity: 0.95; letter-spacing: 0.5px; color: #ff6b6b; font-family: 'Noto Sans KR', sans-serif; }
+
+        /* --- Layout --- */
+        .container { max-width: 1100px; margin: 0 auto; padding: 100px 20px; }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 80px; text-transform: uppercase; border-bottom: 2px solid #ff6b6b; display: inline-block; left: 50%; transform: translateX(-50%); position: relative; padding-bottom: 12px; color: #ffffff; }
+
+        /* --- Showcase (초슬림 알루미늄 바디와 컬러 매칭) --- */
+        .showcase { background: #171a26; padding: 100px 0; border-bottom: 1px solid #23283a; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center; }
+        .tilt-container { position: relative; width: 100%; height: 450px; perspective: 1000px; }
+        .tilt-card { 
+            width: 100%; height: 100%; background: url('images/nuphy_main_tilt.jpg') no-repeat center/cover;
+            border-radius: 8px; box-shadow: 0 30px 60px rgba(0,0,0,0.5); transform-style: preserve-3d; transition: transform 0.1s; 
+        }
+        .desc-box h3 { color: #ff6b6b; font-size: 1.7rem; margin-bottom: 18px; font-weight: 500; font-family: 'Noto Sans KR', sans-serif; }
+        .desc-box p { font-size: 1.05rem; color: #94a3b8; }
+
+        /* --- 테크니컬 3분할 갤러리 --- */
+        .gallery { padding: 100px 0; background: #0f111a; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 4px; height: 350px; box-shadow: 0 15px 35px rgba(0,0,0,0.5); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .gallery-item:hover img { transform: scale(1.08); }
+
+        /* --- SEO Topical Authority 에디토리얼 섹션 --- */
+        .seo-editorial { background: #171a26; padding: 100px 0; border-top: 1px solid #23283a; border-bottom: 1px solid #23283a; }
+        .editorial-content { max-width: 850px; margin: 0 auto; font-size: 1.1rem; line-height: 1.95; color: #cbd5e1; }
+        .editorial-content h3 { color: #ffffff; font-size: 1.5rem; margin-top: 45px; margin-bottom: 20px; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; }
+        .editorial-content p { margin-bottom: 25px; text-align: justify; }
+
+        /* --- Glowing CTA Button --- */
+        .cta { text-align: center; padding: 150px 0; background: linear-gradient(rgba(15,17,26,0.6), rgba(15,17,26,0.7)), url('images/nuphy_lifestyle.jpg') no-repeat center/cover; background-attachment: fixed;  }
+        .cta h2 { color: #ffffff; font-size: 2.2rem; margin-bottom: 15px; font-family: 'Noto Sans KR', sans-serif; }
+        .cta p { color: #cbd5e1; font-size: 1.2rem; margin-bottom: 40px; font-family: 'Noto Sans KR', sans-serif; }
+        .btn-glow { 
+            position: relative; display: inline-block; padding: 22px 55px; color: #fff; background: #c84b4b;
+            font-size: 1.3rem; font-weight: 700; text-decoration: none; border-radius: 4px; text-transform: uppercase;
+            letter-spacing: 1px; overflow: hidden; transition: 0.3s; box-shadow: 0 0 25px rgba(200,75,75,0.4); animation: glowing 2.5s infinite; font-family: 'Montserrat', sans-serif;
+        }
+        
+        /* --- 상호 링크 빌딩 네트워크 (TECH-PROJECT 제국 연합 벨트) --- */
+        .internal-network { margin-top: 30px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .internal-network a { color: #64748b; text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
+        .internal-network a:hover { color: #ff6b6b; }
+
+        /* --- 면책조항 법적 안전장치 및 제휴 고지 레이어 --- */
+        .disclaimer-box { max-width: 850px; margin: 40px auto 0; padding: 22px; border: 1px dashed #334155; border-radius: 6px; background: #0f111a; text-align: left; }
+        .disclaimer-box p { font-size: 0.82rem; color: #64748b; line-height: 1.7; margin: 0 0 10px; }
+        .disclaimer-box p:last-child { margin-bottom: 0; color: #94a3b8; font-weight: 400; }
+
+        /* --- 애니메이션 Keyframes --- */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 1.2s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+        @keyframes glowing { 
+            0% { box-shadow: 0 0 15px rgba(200,75,75,0.4); background: #c84b4b; }
+            50% { box-shadow: 0 0 35px rgba(255,107,107,0.6); background: #ff6b6b; }
+            100% { box-shadow: 0 0 15px rgba(200,75,75,0.4); background: #c84b4b; }
+        }
+
+        .footer { text-align: center; padding: 60px 20px; background: #0f111a; color: #64748b; border-top: 1px solid #171a26; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>AIRBORNE PERFORMANCE</h1>
+            <p>노트북 위로 안착하는 압도적 미학, 무선 로우 프로파일의 정점 | 누피 에어75 V2</p>
+        </div>
+    </section>
+
+    <section class="showcase container">
+        <h2 class="section-title reveal">ULTRA-SLIM EVOLUTION</h2>
+        <div class="grid-2">
+            <div class="tilt-container reveal">
+                <div class="tilt-card" id="tiltCard"></div>
+            </div>
+            <div class="desc-box reveal">
+                <h3> 한계를 지워버린 두께와 기계식 타건 메커니즘의 융합</h3>
+                <p>누피 에어75 V2는 기동성과 데스크테리어 감성을 완벽하게 만족시키는 프리미엄 슬림 키보드입니다. 
+                하단 알루미늄 프레임과 초박형 설계는 손목 받침대(팜레스트) 없이도 장시간 타이핑 시 손목의 피로도를 획기적으로 낮춰줍니다. 
+                특히 맥북(MacBook) 키보드 위에 완벽하게 얹어 사용할 수 있는 **에어피트(AirFeet) 설계**로 모바일 워크스페이스의 밀도를 극대화합니다. 
+                기존 슬림형의 고질병이었던 타건감 부재를 **카우보정 고품질 윤활 스위치**와 내부 흡음 레이어 보강으로 완벽하게 극복했으며, 콤팩트 레이아웃 속에 세련된 포인트 컬러 키캡을 배치하여 시각적 오브제로서의 가치도 최고조에 달한 기어입니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title reveal">ENGINEERED FOR MOBILE PRO</h2>
+            <div class="grid-3">
+                <div class="gallery-item reveal"><img src="images/nuphy_detail1.jpg" alt="초슬림 두께를 구현한 로우 프로파일 기계식 스위치 노출 컷과 투명 하부 하우징 설계"></div>
+                <div class="gallery-item reveal"><img src="images/nuphy_detail2.jpg" alt="맥북 키보드 위에 정교하게 고정되는 하부 에어피트 피스 디테일 및 좌우 인디케이터 LED 라인"></div>
+                <div class="gallery-item reveal"><img src="images/nuphy_detail3.jpg" alt="PBT 이중사출 로우 프로파일 키캡의 정밀한 각인 마감과 블루투스, 2.4GHz 무선 토글 스위치부"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seo-editorial">
+        <div class="container reveal">
+            <h2 class="section-title">The Masterpiece of Low-Profile Mechanical Hardware Architecture</h2>
+            <div class="editorial-content">
+                <p>현대 비즈니스 및 크리에이티브 환경은 사무실이라는 고정된 물리 공간을 탈피하여 카페, 공유 오피스, 비행기 등 기동성을 요구하는 모바일 워크스페이스로 빠르게 다변화되었습니다. 이러한 흐름 속에서 무겁고 두꺼운 전통적 기계식 키보드는 휴대성의 한계를 드러냈고, 일반적인 멤브레인이나 펜터그래프 방식은 극도의 조작감 저하라는 고질적 한계를 품고 있었습니다. 글로벌 커스텀 기어 브랜드 누피(NuPhy)가 선보인 Air75 V2 모델은 기존 로우 프로파일 기계식 기어가 타협해 왔던 빈약한 타건감과 무선 연결 신뢰성을 완전히 리빌딩하며 플래그십 슬림 키보드의 표준 아키텍처를 제시했습니다.</p>
+                
+                <h3>QMK/VIA 오픈소스 커스텀 아키텍처와 무선 1000Hz 폴링레이트의 실현</h3>
+                <p>누피 에어75 V2의 기술적 핵심 진보는 슬림형 폼팩터 최초 수준으로 도입된 강력한 내부 칩셋 아키텍처와 오픈소스 프로토콜의 결합에 있습니다. 전 세계 하이엔드 커스텀 키보드의 상징인 QMK/VIA 하드웨어 매핑 시스템을 전격 탑재하여, 별도의 무거운 무설치 웹 브라우저 툴만으로 모든 레이아웃 구조와 매크로 설정을 키보드 온보드 메모리에 다이렉트로 이식할 수 있습니다. 여기에 2.4GHz 무선 수신기 연동 시 일반 슬림 키보드들의 한계선이었던 레이턴시 장벽을 무너뜨리고 **유선과 동일한 1000Hz 폴링레이트(초당 1,000회 연동)** 신호 주기를 안정적으로 확보하여, 프로급 타이핑 작업뿐만 아니라 극도의 미세 입력을 요구하는 게이밍 세션까지 완벽한 신뢰성 속에서 지원합니다.</p>
+
+                <h3>다공성 실리콘 흡음 공정과 로우 프로파일 스위치 윤활 미학</h3>
+                <p>단순히 얇게 만드는 구조적 설계의 한계를 넘어, 로우 프로파일 제품군 고유의 빈약하고 찰랑거리는 보강판 소음을 정제하기 위해 내부에 정교한 '사운드 댐프닝 소싱 기술'을 반영했습니다. 상판과 하판 프레임 사이 공간에 포론(Poron) 흡음재 및 IXPE 스위치 패드, 그리고 전용 다공성 실리콘 시트를 정밀 압착 내장하여 타건 시 울려 퍼지는 불필요한 하이톤 잡음을 완벽히 흡수합니다. 여기에 게이트론과의 협업을 통해 윤활 처리가 기본 적용된 차세대 로우 프로파일 알로에(Aloe), 카우보이(Cowboy) 스위치 라인업을 매칭함으로써 짧은 스트로크 속에서도 기분 좋은 서걱임과 쫀득한 반발력을 완벽하게 직조해 내어 입력 매커니즘의 완성도를 한 단계 끌어올렸습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container reveal">
+            <h2>모든 공간을 나만의 하이엔드 작업실로 전환하는 슬림 미학을 경험하다</h2>
+            <p>누피 한국 정식 유통원 정품 라인업을 통해 철저한 워런티 2년 보증 및 한정 수량 실시간 최저가 단가를 즉시 확인하세요.</p>
+            <a href="https://link.coupang.com/a/d30phrOTBs" class="btn-glow" target="_blank" rel="noopener noreferrer">국내 정품 최저가 혜택 확인하기</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Ranklamp.com - Tech Premium Magazine</p>
+        
+        <div class="internal-network">
+            <a href="https://hair-straightener.ranklamp.com" target="_blank">▶ 에어스트레이트 셀렉션</a>
+            <a href="https://delonghi-review.ranklamp.com" target="_blank">│ 드롱기 아르테 리뷰</a>
+            <a href="https://marshall-review.ranklamp.com" target="_blank">│ 마샬 워번 에디션</a>
+            <a href="https://balmuda-review.ranklamp.com" target="_blank">│ 발뮤다 플레이트 에디션</a>
+            <a href="https://samsung-review.ranklamp.com" target="_blank">│ 삼성 뮤직프레임 홈</a>
+            <a href="https://louispoulsen-review.ranklamp.com" target="_blank">│ 루이스폴센 판텔라</a>
+            <a href="https://hermanmiller-review.ranklamp.com" target="_blank">│ 허먼밀러 올린 암</a>
+            <a href="https://nomad-review.ranklamp.com" target="_blank">│ 노매드 베이스원 맥스</a>
+            <a href="https://tech-project.ranklamp.com/shure-mv7-review" target="_blank">│ 슈어 MV7+ 프리뷰</a>
+            <a href="https://tech-project.ranklamp.com/nothing-ear-review" target="_blank">│ 낫싱 이어 리뷰</a>
+            <a href="https://tech-project.ranklamp.com/logitech-g502x-review" target="_blank">│ 로지텍 G502X 스펙</a>
+            <a href="https://tech-project.ranklamp.com/rog-ally-x-review" target="_blank">│ 에이수스 롤라이 X 리뷰</a>
+            <a href="https://tech-project.ranklamp.com/sony-srs-ns7-review" target="_blank">│ 소니 SRS-NS7 홈</a>
+            <a href="https://tech-project.ranklamp.com/belkin-qi2-3in1-review" target="_blank">│ 벨킨 Qi2 3-in-1 스탠드</a>
+            <a href="https://tech-project.ranklamp.com/nuphy-air75v2-review">│ 누피 에어75 V2 분석</a>
+        </div>
+
+        <div class="disclaimer-box">
+            <p>본 웹페이지는 누피(NuPhy) 공식 본사 및 정식 수입원과 법적 제휴 관계가 없는 독립 테크 기어 리뷰 매거진의 창작 문서입니다. 본문에 언급된 제품 명칭, 로고, 하드웨어 구동 칩셋명 및 상표권은 각 해당 소유권자에게 귀속됩니다.</p>
+            <p>개정된 공정거래위원회의 '추천·보증 등에 관한 표시·광고 심사지침'에 의거하여 고지합니다. 본 페이지는 쿠팡 파트너스 및 기타 제휴 마케팅 프로그램의 활동 일환으로서, 방문자가 본문의 최저가 링크를 통해 제품을 구매하는 경우 전송 트래픽 유치에 따른 일정액의 수수료를 제공받을 수 있으며, 이는 유저의 구매 가격에 일절 영향을 미치지 않음을 밝힙니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. 스크롤 트리거 애니메이션
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(reveal => observer.observe(reveal));
+
+        // 2. 3D Tilt 효과
+        const card = document.getElementById('tiltCard');
+        const container = document.querySelector('.tilt-container');
+        container.addEventListener('mousemove', (e) => {
+            let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
+            let yAxis = (window.innerHeight / 2 - e.pageY) / 30;
+            card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+        container.addEventListener('mouseleave', () => {
+            card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+            card.style.transition = "all 0.5s ease";
+        });
+    </script>
+</body>
+</html>
